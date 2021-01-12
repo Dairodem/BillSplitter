@@ -35,6 +35,10 @@
             this.lblQuantity = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.gbxNames = new System.Windows.Forms.GroupBox();
+            this.txtName6 = new System.Windows.Forms.TextBox();
+            this.txtName5 = new System.Windows.Forms.TextBox();
+            this.txtName4 = new System.Windows.Forms.TextBox();
+            this.txtName3 = new System.Windows.Forms.TextBox();
             this.txtName2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.gbxNames.SuspendLayout();
@@ -42,6 +46,7 @@
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnStart.Location = new System.Drawing.Point(6, 127);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(188, 33);
@@ -52,9 +57,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(147, 31);
+            this.btnAdd.Location = new System.Drawing.Point(147, 21);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(47, 29);
+            this.btnAdd.Size = new System.Drawing.Size(47, 39);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -70,9 +75,9 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(6, 31);
+            this.btnMinus.Location = new System.Drawing.Point(6, 21);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(47, 29);
+            this.btnMinus.Size = new System.Drawing.Size(47, 39);
             this.btnMinus.TabIndex = 5;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -81,9 +86,10 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(90, 37);
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Location = new System.Drawing.Point(90, 29);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(15, 16);
+            this.lblQuantity.Size = new System.Drawing.Size(18, 20);
             this.lblQuantity.TabIndex = 7;
             this.lblQuantity.Text = "2";
             // 
@@ -103,6 +109,10 @@
             // gbxNames
             // 
             this.gbxNames.BackColor = System.Drawing.Color.Silver;
+            this.gbxNames.Controls.Add(this.txtName6);
+            this.gbxNames.Controls.Add(this.txtName5);
+            this.gbxNames.Controls.Add(this.txtName4);
+            this.gbxNames.Controls.Add(this.txtName3);
             this.gbxNames.Controls.Add(this.txtName2);
             this.gbxNames.Controls.Add(this.txtName1);
             this.gbxNames.Controls.Add(this.btnStart);
@@ -112,6 +122,42 @@
             this.gbxNames.TabIndex = 9;
             this.gbxNames.TabStop = false;
             this.gbxNames.Text = "Namen";
+            // 
+            // txtName6
+            // 
+            this.txtName6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName6.Location = new System.Drawing.Point(6, 240);
+            this.txtName6.Name = "txtName6";
+            this.txtName6.Size = new System.Drawing.Size(188, 29);
+            this.txtName6.TabIndex = 9;
+            this.txtName6.Visible = false;
+            // 
+            // txtName5
+            // 
+            this.txtName5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName5.Location = new System.Drawing.Point(6, 200);
+            this.txtName5.Name = "txtName5";
+            this.txtName5.Size = new System.Drawing.Size(188, 29);
+            this.txtName5.TabIndex = 8;
+            this.txtName5.Visible = false;
+            // 
+            // txtName4
+            // 
+            this.txtName4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName4.Location = new System.Drawing.Point(6, 160);
+            this.txtName4.Name = "txtName4";
+            this.txtName4.Size = new System.Drawing.Size(188, 29);
+            this.txtName4.TabIndex = 7;
+            this.txtName4.Visible = false;
+            // 
+            // txtName3
+            // 
+            this.txtName3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName3.Location = new System.Drawing.Point(6, 120);
+            this.txtName3.Name = "txtName3";
+            this.txtName3.Size = new System.Drawing.Size(188, 29);
+            this.txtName3.TabIndex = 6;
+            this.txtName3.Visible = false;
             // 
             // txtName2
             // 
@@ -154,5 +200,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox gbxNames;
         private System.Windows.Forms.TextBox txtName2;
+        private System.Windows.Forms.TextBox txtName6;
+        private System.Windows.Forms.TextBox txtName5;
+        private System.Windows.Forms.TextBox txtName4;
+        private System.Windows.Forms.TextBox txtName3;
     }
 }

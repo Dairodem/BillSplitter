@@ -12,6 +12,8 @@ namespace BillSplitter
 {
     public partial class Splitter : Form
     {
+        public List<string> NameList = new List<string>();
+
         public Splitter()
         {
             InitializeComponent();
@@ -20,11 +22,9 @@ namespace BillSplitter
         private void Form1_Load(object sender, EventArgs e)
         {
             CenterToParent();
+
+            lbxNames.DataSource = NameList;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

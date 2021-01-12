@@ -13,11 +13,16 @@ namespace BillSplitter
     public partial class BillSplitter : Form
     {
         public int Quantity = 2;
-        private int resizeSpace = 30;
+
+        private TextBox[] textBoxNames;
+        private int resizeSpace = 40;
+        
 
         public BillSplitter()
         {
             InitializeComponent();
+
+            textBoxNames = new TextBox[] { txtName1, txtName2, txtName3, txtName4, txtName5, txtName6 };
         }
 
 
@@ -28,6 +33,7 @@ namespace BillSplitter
         private void btnStart_Click(object sender, EventArgs e)
         {
             Splitter splitter = new Splitter();
+            splitter.NameList = GetNames();
             splitter.ShowDialog();
         }
 
@@ -38,7 +44,10 @@ namespace BillSplitter
                 Quantity++;
                 lblQuantity.Text = Quantity.ToString();
 
-                this.Size = new Size(Width, Height + resizeSpace);
+                Size = new Size(Width, Height + resizeSpace);
+                gbxNames.Size = new Size(gbxNames.Width, gbxNames.Height + resizeSpace);
+
+                textBoxNames[Quantity-1].Visible = true;
             }
         }
 
@@ -48,8 +57,24 @@ namespace BillSplitter
             {
                 Quantity--;
                 lblQuantity.Text = Quantity.ToString();
-                this.Size = new Size(Width, Height - resizeSpace);
+
+                Size = new Size(Width, Height - resizeSpace);
+                gbxNames.Size = new Size(gbxNames.Width, gbxNames.Height - resizeSpace);
+
+                textBoxNames[Quantity].Visible = false;
             }
+        }
+
+        private List<string> GetNames()
+        {
+            List<string> temp = new List<string>();
+
+            for (int i = 0; i < Quantity; i++)
+            {
+                temp.Add(textBoxNames[i].Text);
+            }
+
+            return temp;
         }
     }
 }

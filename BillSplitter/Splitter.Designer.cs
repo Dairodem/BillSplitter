@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbx = new System.Windows.Forms.GroupBox();
+            this.gbxPerson = new System.Windows.Forms.GroupBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxNames = new System.Windows.Forms.ListBox();
             this.btnCalc = new System.Windows.Forms.Button();
-            this.gbx.SuspendLayout();
+            this.gbxPerson.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbx
+            // gbxPerson
             // 
-            this.gbx.Controls.Add(this.listBox2);
-            this.gbx.Location = new System.Drawing.Point(170, 12);
-            this.gbx.Name = "gbx";
-            this.gbx.Size = new System.Drawing.Size(137, 173);
-            this.gbx.TabIndex = 9;
-            this.gbx.TabStop = false;
-            this.gbx.Text = "persoon";
+            this.gbxPerson.Controls.Add(this.listBox2);
+            this.gbxPerson.Location = new System.Drawing.Point(170, 12);
+            this.gbxPerson.Name = "gbxPerson";
+            this.gbxPerson.Size = new System.Drawing.Size(137, 293);
+            this.gbxPerson.TabIndex = 9;
+            this.gbxPerson.TabStop = false;
+            this.gbxPerson.Text = "persoon";
             // 
             // listBox2
             // 
@@ -51,24 +51,23 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(6, 46);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(125, 108);
+            this.listBox2.Size = new System.Drawing.Size(125, 238);
             this.listBox2.TabIndex = 6;
             // 
-            // listBox1
+            // lbxNames
             // 
-            this.listBox1.BackColor = System.Drawing.Color.Ivory;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 59);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(141, 108);
-            this.listBox1.TabIndex = 8;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lbxNames.BackColor = System.Drawing.Color.Ivory;
+            this.lbxNames.FormattingEnabled = true;
+            this.lbxNames.Location = new System.Drawing.Point(12, 59);
+            this.lbxNames.Name = "lbxNames";
+            this.lbxNames.Size = new System.Drawing.Size(126, 108);
+            this.lbxNames.TabIndex = 8;
             // 
             // btnCalc
             // 
             this.btnCalc.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.btnCalc.Location = new System.Drawing.Point(12, 192);
-            this.btnCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalc.Location = new System.Drawing.Point(158, 355);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(289, 45);
             this.btnCalc.TabIndex = 7;
@@ -79,25 +78,25 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 270);
-            this.Controls.Add(this.gbx);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(627, 413);
+            this.Controls.Add(this.gbxPerson);
+            this.Controls.Add(this.lbxNames);
             this.Controls.Add(this.btnCalc);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Splitter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "BillSplitter";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.gbx.ResumeLayout(false);
+            this.gbxPerson.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbx;
+        private System.Windows.Forms.GroupBox gbxPerson;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxNames;
         private System.Windows.Forms.Button btnCalc;
     }
 }
