@@ -23,6 +23,8 @@ namespace BillSplitter
             InitializeComponent();
 
             textBoxNames = new TextBox[] { txtName1, txtName2, txtName3, txtName4, txtName5, txtName6 };
+            txtName1.Text = "Dairo";
+            txtName2.Text = "Joren";
         }
 
 
@@ -33,7 +35,7 @@ namespace BillSplitter
         private void btnStart_Click(object sender, EventArgs e)
         {
             Splitter splitter = new Splitter();
-            splitter.NameList = GetNames();
+            splitter.PersonList = GetNames();
             splitter.ShowDialog();
         }
 
@@ -65,13 +67,14 @@ namespace BillSplitter
             }
         }
 
-        private List<string> GetNames()
+        private List<Person> GetNames()
         {
-            List<string> temp = new List<string>();
+            List<Person> temp = new List<Person>();
 
             for (int i = 0; i < Quantity; i++)
             {
-                temp.Add(textBoxNames[i].Text);
+                temp.Add(new Person { Name = textBoxNames[i].Text, Bills = new List<double> { 12.10, 25.00 } });
+
             }
 
             return temp;

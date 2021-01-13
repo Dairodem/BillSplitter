@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BillSplitter
 {
-    class Person
+    public class Person
     {
         public string Name { get; set; }
         public List<double> Bills { get; set; }
@@ -14,6 +14,11 @@ namespace BillSplitter
         public Person()
         {
             Bills = new List<double>();
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
 
     }
