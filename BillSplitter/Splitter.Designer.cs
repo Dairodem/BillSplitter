@@ -101,6 +101,7 @@
             this.btnCalc.TabIndex = 6;
             this.btnCalc.Text = "Bereken";
             this.btnCalc.UseVisualStyleBackColor = false;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // txtEntry
             // 

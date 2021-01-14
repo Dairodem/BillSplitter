@@ -10,6 +10,7 @@ namespace BillSplitter
     {
         public string Name { get; set; }
         public List<double> Bills { get; set; }
+        public double Total { get; set; }
 
         public Person()
         {
