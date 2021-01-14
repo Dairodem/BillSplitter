@@ -7,13 +7,13 @@ namespace BillSplitter
     public partial class Splitter : Form
     {
         public List<Person> PersonList = new List<Person>();
-        Person currPerson = new Person ();
+
+        private Person currPerson = new Person ();
 
         public Splitter()
         {
             InitializeComponent();
         }
-
         private void ResetBillsList()
         {
             lbxBills.DataSource = null;

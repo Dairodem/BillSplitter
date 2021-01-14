@@ -22,14 +22,13 @@ namespace BillSplitter
         {
             InitializeComponent();
 
+        }
+        private void BillSplitter_Load(object sender, EventArgs e)
+        {
             textBoxNames = new TextBox[] { txtName1, txtName2, txtName3, txtName4, txtName5, txtName6 };
             txtName1.Text = "Dairo";
             txtName2.Text = "Joren";
-        }
 
-
-        private void BillSplitter_Load(object sender, EventArgs e)
-        {
             lblQuantity.Text = Quantity.ToString();
         }
         private void btnStart_Click(object sender, EventArgs e)
@@ -38,7 +37,6 @@ namespace BillSplitter
             splitter.PersonList = GetNames();
             splitter.ShowDialog();
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (Quantity < 6)
@@ -52,7 +50,6 @@ namespace BillSplitter
                 textBoxNames[Quantity-1].Visible = true;
             }
         }
-
         private void btnMinus_Click(object sender, EventArgs e)
         {
             if (Quantity > 2)
@@ -66,7 +63,6 @@ namespace BillSplitter
                 textBoxNames[Quantity].Visible = false;
             }
         }
-
         private List<Person> GetNames()
         {
             List<Person> temp = new List<Person>();
@@ -78,6 +74,6 @@ namespace BillSplitter
             }
 
             return temp;
-        }
+        }// Gets all names from active textboxes
     }
 }

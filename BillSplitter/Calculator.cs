@@ -16,7 +16,7 @@ namespace BillSplitter
 
         public Calculator(List<Person> personList)
         {
-            // Get total payed by all participants
+            // Gets the total payed by all participants
             foreach (Person person in personList)
             {
                 count++;
