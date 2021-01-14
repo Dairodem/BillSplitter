@@ -33,7 +33,9 @@ namespace BillSplitter
         } // adds all the bills to total
         private void btnCalc_Click(object sender, EventArgs e)
         {
+            Calculator calc = new Calculator(PersonList);
 
+            MessageBox.Show(calc.OutputText);
         }
         private void Form1_Load(object sender, EventArgs e)
         {

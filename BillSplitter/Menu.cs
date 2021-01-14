@@ -73,7 +73,7 @@ namespace BillSplitter
 
             for (int i = 0; i < Quantity; i++)
             {
-                temp.Add(new Person { Name = textBoxNames[i].Text, Bills = new List<double> { 12.10, 25.00 } });
+                temp.Add(new Person { Name = textBoxNames[i].Text });
 
             }
 

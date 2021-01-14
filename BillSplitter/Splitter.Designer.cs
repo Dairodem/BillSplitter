@@ -41,6 +41,7 @@
             // 
             // gbxPerson
             // 
+            this.gbxPerson.BackColor = System.Drawing.Color.Salmon;
             this.gbxPerson.Controls.Add(this.txtTotal);
             this.gbxPerson.Controls.Add(this.label1);
             this.gbxPerson.Controls.Add(this.lbxBills);
@@ -127,6 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(333, 413);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.txtEntry);
